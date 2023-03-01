@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uQ362iPHnUkaw1sqWG+YS506pNt2+2XphNubbFEgxY8=",
+  "Hash": "07Z1LIXUzecgiUXqZKN6hd7hldddh/FXIaoYOJIN0+s=",
   "Source": "InventoryManagementSystem",
   "BasePath": "_content/InventoryManagementSystem",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\Images\\bg-home.png",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "Images/bg-home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bg-home.png"
+    },
+    {
+      "Identity": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\Images\\logo.png",
+      "SourceId": "InventoryManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\",
+      "BasePath": "_content/InventoryManagementSystem",
+      "RelativePath": "Images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
       "Identity": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\js\\site.js",

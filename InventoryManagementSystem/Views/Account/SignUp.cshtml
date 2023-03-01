@@ -12,6 +12,16 @@
             </div>
             <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded-4 pe-5 ps-5 pb-5 mt-5">
                 <div class="form-group">
+                    <label asp-for="FirstName">First name</label>
+                <input type="text" asp-for="FirstName" placeholder="Enter First name" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label asp-for="LastName">Last name</label>
+                <input type="text" asp-for="LastName" placeholder="Enter Last name" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
                     <label asp-for="UserName">Username</label>
                 <input type="text" asp-for="UserName" placeholder="Enter Username" class="form-control" autocomplete="off" />
                 </div>

@@ -65,9 +65,14 @@ namespace InventoryManagementSystem.Controllers.Account
         public IActionResult Logout()
         {
             HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            var storedCookies = Request.Cookies.Keys;
+            foreach (var cookies in storedCookies)
+            {
+                Response.Cookies.Delete(cookies);
+            }
             return RedirectToAction("Login", "Account");
         }
-        public IActionResult SignUp()   //GET method
+        public IActionResult SignUp()   
         {
             return View();
         }
@@ -81,7 +86,9 @@ namespace InventoryManagementSystem.Controllers.Account
                     UserName = model.UserName,
                     Email = model.Email,
                     Password = model.Password,
-                    PhoneNumber = model.PhoneNumber
+                    PhoneNumber = model.PhoneNumber,
+                    FirstName = model.FirstName, 
+                    LastName = model.LastName
                 };
                 context.Users.Add(data);
                 context.SaveChanges();

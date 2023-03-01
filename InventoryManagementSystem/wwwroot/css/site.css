@@ -19,4 +19,13 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-image: url(/Images/bg-home.png);
+  background-position: center;
+}
+
+.dashboard{
+    margin-top: 150px;
+}
+.dbutton{
+    opacity: 85%;
 }

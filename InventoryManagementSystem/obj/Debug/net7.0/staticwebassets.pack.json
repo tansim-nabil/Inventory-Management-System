@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\InventoryManagementSystem.bundle.scp.css"
     },
     {
+      "Id": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\Images\\bg-home.png",
+      "PackagePath": "staticwebassets\\Images\\bg-home.png"
+    },
+    {
+      "Id": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\Images\\logo.png",
+      "PackagePath": "staticwebassets\\Images\\logo.png"
+    },
+    {
       "Id": "F:\\University works\\Coding\\C#\\Inventory Management System\\InventoryManagementSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

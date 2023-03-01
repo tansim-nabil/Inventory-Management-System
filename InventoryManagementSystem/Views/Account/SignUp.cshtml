@@ -4,5 +4,43 @@
     Layout = "~/Views/Shared/_Layout_Login.cshtml";
 }
 
-<h1>SignUp</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <div class="text-center">
+                <h1 class="text-info">User Registration Form</h1>
+            </div>
+            <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+                <div class="form-group">
+                    <label asp-for="UserName"></label>
+                <input type="text" asp-for="UserName" placeholder="Enter Username" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                <input type="text" asp-for="Email" placeholder="Enter Email" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label asp-for="PhoneNumber"></label>
+                <input type="text" asp-for="PhoneNumber" placeholder="Enter Phone Number" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                <input type="text" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label asp-for="ConfirmPassword"></label>
+                <input type="text" asp-for="ConfirmPassword" placeholder="Enter Password" class="form-control" autocomplete="off" />
+                </div> 
+                <br>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-success btnalign-content-lg-around mb-1 float-end" value="Registration" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 

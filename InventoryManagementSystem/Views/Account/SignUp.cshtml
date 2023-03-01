@@ -10,9 +10,9 @@
             <div class="text-center">
                 <h1 class="text-info">User Registration Form</h1>
             </div>
-            <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded">
+            <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded-4 pe-5 ps-5 pb-5">
                 <div class="form-group">
-                    <label asp-for="UserName"></label>
+                    <label asp-for="UserName">Username</label>
                 <input type="text" asp-for="UserName" placeholder="Enter Username" class="form-control" autocomplete="off" />
                 </div>
                 <br>
@@ -22,19 +22,21 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label asp-for="PhoneNumber"></label>
+                    <label asp-for="PhoneNumber">Phone number</label>
                 <input type="text" asp-for="PhoneNumber" placeholder="Enter Phone Number" class="form-control" autocomplete="off" />
                 </div>
                 <br>
-                <div class="form-group">
-                    <label asp-for="Password"></label>
-                <input type="text" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
-                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label asp-for="Password"></label>
+                        <input type="text" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
+                    </div>
                 <br>
-                <div class="form-group">
-                    <label asp-for="ConfirmPassword"></label>
-                <input type="text" asp-for="ConfirmPassword" placeholder="Enter Password" class="form-control" autocomplete="off" />
-                </div> 
+                    <div class="form-group col-6">
+                        <label asp-for="ConfirmPassword">Confirm password</label>
+                        <input type="text" asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" autocomplete="off" />
+                    </div>
+                </div>
                 <br>
                 <div class="form-group">
                     <input type="submit" class="btn btn-success btnalign-content-lg-around mb-1 float-end" value="Registration" />

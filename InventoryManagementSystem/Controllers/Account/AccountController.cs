@@ -8,5 +8,9 @@ namespace InventoryManagementSystem.Controllers.Account
         {
             return View();
         }
+        public IActionResult SignUp()   //GET method
+        {
+            return View();
+        }
     }
 }

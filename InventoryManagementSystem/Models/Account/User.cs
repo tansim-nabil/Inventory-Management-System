@@ -1,7 +1,10 @@
-﻿namespace InventoryManagementSystem.Models.Account
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace InventoryManagementSystem.Models.Account
 {
     public class User
     {
+        [Key]
         public int Id { get; set; }
 
         public string UserName { get; set; }

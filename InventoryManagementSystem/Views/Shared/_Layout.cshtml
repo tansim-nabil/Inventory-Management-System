@@ -27,6 +27,14 @@
                         </li>
                     </ul>
                 </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="navbar float-end">
+                        <span>Welcome to </span> <span class="text-success font-weight-bolds">@User.Identity.Name</span><a class="btn btn-sm btn-danger" asp-action="Logout" asp-controller="Account">Logout</a>
+                    </div>
+
+                }
+                
             </div>
         </nav>
     </header>

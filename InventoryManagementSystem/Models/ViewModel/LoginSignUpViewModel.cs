@@ -1,12 +1,13 @@
-﻿namespace InventoryManagementSystem.Models.ViewModel
+﻿using Microsoft.Build.Framework;
+
+namespace InventoryManagementSystem.Models.ViewModel
 {
     public class LoginSignUpViewModel
     {
-
+        [Required]
         public string UserName { get; set; }
-
-        public string Email { get; set; }
-
+        
+        [Required]
         public string Password { get; set; }
     
     }

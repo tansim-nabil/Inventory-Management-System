@@ -1,4 +1,4 @@
-﻿@model InventoryManagementSystem.Models.ViewModel.LoginSignUpViewModel
+﻿@model InventoryManagementSystem.Models.ViewModel.SignUpUserViewModel
 @{
     ViewData["Title"] = "SignUp";
     Layout = "~/Views/Shared/_Layout_Login.cshtml";
@@ -10,7 +10,7 @@
             <div class="text-center">
                 <h1 class="text-info">User Registration Form</h1>
             </div>
-            <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded-4 pe-5 ps-5 pb-5">
+            <form method="post" asp-action="SignUp" class="shadow p-3 mb-5 bg-body-tertiary rounded-4 pe-5 ps-5 pb-5 mt-5">
                 <div class="form-group">
                     <label asp-for="UserName">Username</label>
                 <input type="text" asp-for="UserName" placeholder="Enter Username" class="form-control" autocomplete="off" />
@@ -23,23 +23,23 @@
                 <br>
                 <div class="form-group">
                     <label asp-for="PhoneNumber">Phone number</label>
-                <input type="text" asp-for="PhoneNumber" placeholder="Enter Phone Number" class="form-control" autocomplete="off" />
+                <input type="number" asp-for="PhoneNumber" placeholder="Enter Phone Number" class="form-control" autocomplete="off" />
                 </div>
                 <br>
                 <div class="row">
                     <div class="form-group col-6">
                         <label asp-for="Password"></label>
-                        <input type="text" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
+                        <input type="password" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
                     </div>
                 <br>
                     <div class="form-group col-6">
                         <label asp-for="ConfirmPassword">Confirm password</label>
-                        <input type="text" asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" autocomplete="off" />
+                        <input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password" class="form-control" autocomplete="off" />
                     </div>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="submit" class="btn btn-success btnalign-content-lg-around mb-1 float-end" value="Registration" />
+                    <input type="submit" class="btn btn-success btnalign-content-lg-around mb-1 float-end" value="Register" />
                 </div>
             </form>
         </div>

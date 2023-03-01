@@ -11,6 +11,7 @@
                 <h1 class="text-info">User Login Portal</h1>
             </div>
             <form method="post" asp-action="Login" class="shadow p-3 mb-5 bg-body-tertiary rounded-4 pe-5 ps-5 pb-5">
+                <h6 class="text-center text-success">@TempData["successMessage"]</h6>
                 <div class="form-group">
                     <label asp-for="UserName">Username</label>
                 <input type="text" asp-for="UserName" placeholder="Enter Username" class="form-control" autocomplete="off" />
@@ -23,7 +24,7 @@
                 <br>
                 <div class="form-group">
                     <label asp-for="Password"></label>
-                <input type="text" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
+                <input type="password" asp-for="Password" placeholder="Enter Password" class="form-control" autocomplete="off" />
                 </div>
                 <br> 
                 <div class="form-group d-grid gap-2">
